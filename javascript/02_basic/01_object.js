@@ -1,8 +1,5 @@
-// singleton 
-// Object.create  //this method creates singleton type object
 
-
-// object literals  , we can give any type of daya in object 
+// object literals  , we can give any type of data in object 
 
 const mySym = Symbol('myKey');
 const jsUser = 
