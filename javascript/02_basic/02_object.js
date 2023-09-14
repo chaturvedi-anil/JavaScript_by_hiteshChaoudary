@@ -42,3 +42,18 @@ const obj3 = {5:"a", 6:"b"};
 
 // console.log({...obj1, ...obj2, ...obj3});
 // { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+
+
+// -------------object destructuring---------------
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+};
+
+//   direct accessing the key of object 
+const { firstName, lastName, age } = person;
+
+console.log(firstName); // Outputs: "John"
+console.log(lastName);  // Outputs: "Doe"
+console.log(age);       // Outputs: 30
