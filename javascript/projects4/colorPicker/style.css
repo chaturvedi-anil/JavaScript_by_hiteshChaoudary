@@ -1,0 +1,40 @@
+body
+{
+    background-color: #212121;
+    color: white;
+    text-align: center
+}
+.container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button
+{
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.button:hover
+{
+    cursor: pointer;
+}
+#grey
+{
+    background-color: grey;
+}
+#yellow
+{
+    background-color: yellow;
+}
+#red
+{
+    background-color: red;
+}
+#royalblue
+{
+    background-color: royalblue;
+}
