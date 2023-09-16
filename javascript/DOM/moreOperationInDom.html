@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="language">
+        <li>javaS</li>
+    </ul>
+</body>
+<script>
+    // adding new li
+    function addList(liName)
+    {
+        const li = document.createElement('li');
+        li.innerHTML = `${liName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addList('C');
+    addList('C++');
+
+    // littile optimize in bigger projects
+    function addListOptimize(liName)
+    {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${liName}`));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addListOptimize("javascript");
+    addListOptimize("ruby");
+
+
+    // editing
+    function editLang(newLang, position)
+    {
+        const new_lang = document.querySelector(`li:nth-child(${position})`);
+        const newLi = document.createElement('li');
+        newLi.textContent = `${newLang}`;
+        new_lang.replaceWith(newLi);
+    }
+    editLang("php", 2);
+
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+</html>
