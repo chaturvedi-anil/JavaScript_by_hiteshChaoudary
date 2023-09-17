@@ -52,7 +52,9 @@
     }
     editLang("php", 2);
 
-
+    // edit using outer element
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = "<li> HTML </li>";
     // remove 
     const lastLang = document.querySelector('li:last-child');
     lastLang.remove();
