@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Anil chaturvedi</h1>
+
+    <button id="stop">stop</button>
+</body>
+<script>
+    // const printName = function(){
+    //     console.log("anil");
+    // }
+
+    // setTimeout(printName, 3000);
+
+    const changeHead = function()
+    {
+        document.querySelector('.heading').innerHTML = "I am the best coder";
+    }
+    let setTime = setTimeout(changeHead, 3000);
+
+    let stop = document.querySelector('#stop');
+    stop.addEventListener('click', function(e)
+    {
+        clearTimeout(setTime);
+        console.log("stopped");
+    });
+    
+    </script>
+</html>
